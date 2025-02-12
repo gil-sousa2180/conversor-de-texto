@@ -1,0 +1,183 @@
+/*Estilos globais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", serif;
+}
+/*Estilos globais*/
+/*Estilos Main projeto*/
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./assests/microphone.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20%;
+    color: #fff;
+    text-align: center;
+    gap: 20px;
+
+
+    h1 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    span {
+        color:#757575;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+/*Estilos Main projeto*/
+/*Estilos Content*/
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+
+    textarea {
+        width: 75%;
+        height: 125px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 10px 0 0 10px;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 75%;
+        margin-top: 5%;
+
+        .box1 {
+            margin-right: 30px;
+        }
+
+        .action-box {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            min-width: 180px;
+        }
+
+        .last-btn {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    #voice, #label-file, button {
+        font-size: 20px;
+        padding: 10px 15px;
+        background-color: transparent;
+        border: 1px solid #757575;
+        color:#757575;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: .9s;
+    }
+
+    #voice {
+        width: 100%;
+    }
+
+    #voice:hover {
+        color: #000;
+        border: 1px solid #fff;
+    }
+
+    button:hover, #label-file:hover {
+        color: #fff;
+        border: 1px solid #fff
+    }
+}
+/*Estilos Content*/
+/*Estilos iPad PRO */
+@media screen and (max-width: 1030px) {
+
+    main {
+        background-position: right;
+        padding: 0%;
+        padding-bottom: 20%;
+    }
+
+    #content {
+        width: 99%;
+
+        .actions {
+            justify-content: space-between;
+            width: 90%;
+        }
+
+        textarea {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        #voice, #label-file, button {
+            font-size: 20px;
+            padding: 10px 15px;
+            background-color: #fff;
+            border: 1px solid #757575;
+            color: #757575;
+
+            &:hover {
+                color: #000;
+                border: 1px solid #000;
+            }
+        }   
+    }
+}
+/*Estilos iPad PRO */
+/*Estilos iPad Mini & Mobile */
+@media screen and (max-width: 780px) {
+    main {
+        padding-bottom: 0%;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 30px;
+    }  
+}
+/*Estilos iPad Mini & Mobile */
+/*Estilos Mobile */
+@media screen and (max-width: 500px) {
+    
+    main {
+        background-position: center;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    textarea {
+        width: 90%;
+    }
+}
+/*Estilos Mobile */
