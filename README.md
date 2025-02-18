@@ -42,10 +42,9 @@ Projeto Conversor de texto para voz, desenvolvido de forma dinâmica e intuitiva
 
 
 ## 🔗Imagens do projeto
+<br/>
 
-           Projeto desenvolvido com as tecnologia HTML,CSS,JavaScript e reposvivo adaptável para qualquer dispositivel
 
- 
   ![Novo Projeto (1)](https://github.com/user-attachments/assets/b140481d-5cf8-44a9-b5e1-fa9b8743a079)
 
   
